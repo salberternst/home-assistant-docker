@@ -1,0 +1,24 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+python_script:
+
+influxdb:
+  api_version: 2
+  ssl: false
+  host: 127.0.0.1
+  port: 8086
+  token: !env_var INFLUXDB_TOKEN
+  bucket: home_assistant
+  organization: a1ac6cacd45ac16a
+
+modbus: !include modbus.yaml
