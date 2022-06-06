@@ -1,0 +1,11 @@
+api_version: 2
+ssl: false
+host: 127.0.0.1
+port: 8086
+token: !secret influxdb-token
+bucket: home-assistant-data
+organization: !secret influxdb-org-id
+tags_attributes:
+  - friendly_name
+  - area
+  - zone

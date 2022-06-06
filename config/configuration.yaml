@@ -12,13 +12,7 @@ scene: !include scenes.yaml
 
 python_script:
 
-influxdb:
-  api_version: 2
-  ssl: false
-  host: 127.0.0.1
-  port: 8086
-  token: !secret influxdb-token
-  bucket: home_assistant
-  organization: !secret influxdb-org-id
-
+recorder: !include recorder.yaml
+history:
+influxdb: !include influxdb.yaml
 modbus: !include modbus.yaml
