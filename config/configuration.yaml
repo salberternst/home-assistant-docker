@@ -17,8 +17,8 @@ influxdb:
   ssl: false
   host: 127.0.0.1
   port: 8086
-  token: !env_var INFLUXDB_TOKEN
+  token: !secret influxdb-token
   bucket: home_assistant
-  organization: a1ac6cacd45ac16a
+  organization: !secret influxdb-org-id
 
 modbus: !include modbus.yaml
