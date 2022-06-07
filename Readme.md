@@ -1,6 +1,6 @@
-# Home Assistant Image
+# Home Assistant Docker
 
-Prebuild [home assistant](https://github.com/home-assistant/core) including some preconfigured features like [Shelly MQTT](https://github.com/bieniu/ha-shellies-discovery), [InfluxDB](https://www.influxdata.com/) and [Modbus](https://modbus.org/).
+Docker image for [home assistant](https://github.com/home-assistant/core) including some preconfigured features like [Shelly MQTT](https://github.com/bieniu/ha-shellies-discovery), [InfluxDB](https://www.influxdata.com/) and [Modbus](https://modbus.org/).
 
 Configuration is split across multiple files for easy customization.
 
