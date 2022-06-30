@@ -16,3 +16,4 @@ recorder: !include recorder.yaml
 history:
 influxdb: !include influxdb.yaml
 modbus: !include modbus.yaml
+mqtt: !include mqtt.yaml
